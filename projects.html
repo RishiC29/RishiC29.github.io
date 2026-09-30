@@ -47,6 +47,19 @@
       </div>
     </div>
 
+    <div class="project-card" role="button" tabindex="0" onclick="openModal('scanner')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openModal('scanner');}">
+      <img class="card-cover" style="object-fit:contain; background:#fff; padding:6px;" src="images/lidar-scan-iso.jpg" alt="3D wireframe point cloud of a hallway reconstructed by the scanner.">
+      <div class="card-body">
+        <div class="card-head">
+          <h3>3D Spatial Mapping Scanner</h3>
+          <span class="card-dates">2026</span>
+        </div>
+        <p class="card-teaser">An embedded time-of-flight scanner that sweeps a room slice by slice and rebuilds it as a 3D point cloud.</p>
+        <div class="card-tags"><span class="tag">Embedded C</span><span class="tag">Python</span></div>
+        <span class="card-cta">View project →</span>
+      </div>
+    </div>
+
     <div class="project-card" role="button" tabindex="0" onclick="openModal('frc')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openModal('frc');}">
       <img class="card-cover" src="images/frc-field.jpg" alt="Robot 1325 on the competition field.">
       <div class="card-body">
@@ -201,6 +214,56 @@
         <a href="https://github.com/Pumkinmarble/cxc2026" target="_blank" rel="noopener">GitHub ↗</a>
         <a href="https://devpost.com/software/ditto-fw1zob" target="_blank" rel="noopener">Devpost ↗</a>
       </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-scanner" onclick="if(event.target===this)closeModal('scanner')">
+  <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="scanner-title">
+    <button class="modal-close" onclick="closeModal('scanner')" aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <div class="modal-cover">
+      <img src="images/lidar-hardware.jpg" alt="The scanner hardware: a microcontroller, stepper motor and ToF sensor wired inside a cardboard enclosure.">
+      <img style="object-fit:contain; background:#fff; padding:6px;" src="images/lidar-scan-iso.jpg" alt="Isometric view of the 3D wireframe reconstruction of a hallway.">
+    </div>
+    <div class="modal-body">
+      <div class="title-block">
+        <h2 id="scanner-title">3D Spatial Mapping Scanner</h2>
+        <span class="project-dates">COMPENG 2DX3 — 2026</span>
+      </div>
+      <div class="tag-row">
+        <span class="tag">Embedded C</span>
+        <span class="tag">MSP432E401Y</span>
+        <span class="tag">I2C / UART</span>
+        <span class="tag">Python</span>
+        <span class="tag">Open3D</span>
+      </div>
+      <div class="project-body">
+        <p>
+          A low-cost embedded system that maps indoor spaces in 3D. A VL53L1X time-of-flight sensor
+          mounted on a stepper motor sweeps a full 360° in 64 steps, taking a distance reading every
+          5.625°. Moving the device forward between sweeps stacks those 2D slices into a 3D
+          representation of the space.
+        </p>
+        <p>
+          I wrote the firmware for the MSP432E401Y microcontroller: reading the sensor over I2C,
+          driving the stepper through a ULN2003 driver, push-button start and pause control, and
+          status LEDs for measurement, transmission and motor state. Everything runs on polling so
+          each reading lines up with a known motor angle. Measurements stream to a PC over UART at
+          115,200 baud, where a Python script converts them from polar to Cartesian coordinates and
+          renders the point cloud with Open3D.
+        </p>
+        <p>
+          For the final scan I captured 30 slices spaced 30 mm apart along a campus hallway, and the
+          reconstruction matched the shape of the real space.
+        </p>
+      </div>
+      <div class="modal-cover" style="margin-top:16px; border-radius: var(--radius-sm); overflow:hidden;">
+        <img src="images/lidar-hallway.jpg" alt="The campus hallway that was scanned.">
+        <img style="object-fit:contain; background:#fff; padding:6px;" src="images/lidar-scan-front.jpg" alt="Front view of the 3D reconstruction, looking down the scanned hallway.">
+      </div>
+      <p class="modal-caption">The hallway that was scanned, and the front view of its reconstruction.</p>
     </div>
   </div>
 </div>
