@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rishi Chakrabarty — Projects</title>
+<meta name="description" content="Selected projects by Rishi Chakrabarty spanning embedded firmware, robotics, and software.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="wordmark">Rishi Chakrabarty</a>
+    <nav class="site-nav">
+      <a href="index.html" class="nav-link">About</a>
+      <a href="projects.html" class="nav-link active">Projects</a>
+      <!-- TODO: point this at your hosted resume link -->
+      <a href="#" class="nav-link nav-resume">Resume</a>
+    </nav>
+  </div>
+</header>
+
+<section class="band page-head-band">
+  <div class="wrap page-head">
+    <h1>Projects</h1>
+    <p>A mix of embedded firmware, mechanical design, and software. Click any project for the full write-up.</p>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="projects-grid">
+
+    <div class="project-card" role="button" tabindex="0" onclick="openModal('ditto')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openModal('ditto');}">
+      <img class="card-cover" src="images/ditto-cover.jpg" alt="Ditto, an AI digital twin, shown as a purple avatar with a chat box.">
+      <div class="card-body">
+        <div class="card-head">
+          <h3>Ditto</h3>
+          <span class="card-dates">2026</span>
+        </div>
+        <p class="card-teaser">A persistent AI digital twin with memory and a cloned voice — winner of Best Use of ElevenLabs at CXC 2026.</p>
+        <div class="card-tags"><span class="tag">Next.js</span><span class="tag">ElevenLabs</span></div>
+        <span class="card-cta">View project →</span>
+      </div>
+    </div>
+
+    <div class="project-card" role="button" tabindex="0" onclick="openModal('frc')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openModal('frc');}">
+      <img class="card-cover" src="images/frc-field.jpg" alt="Robot 1325 on the competition field.">
+      <div class="card-body">
+        <div class="card-head">
+          <h3>FRC Shooter — Team 1325</h3>
+          <span class="card-dates">2022–24</span>
+        </div>
+        <p class="card-teaser">Designed and built the shooter mechanism that helped our team place 5th at the FRC World Championship.</p>
+        <div class="card-tags"><span class="tag">SOLIDWORKS</span><span class="tag">Mechanical</span></div>
+        <span class="card-cta">View project →</span>
+      </div>
+    </div>
+
+    <div class="project-card" role="button" tabindex="0" onclick="openModal('earlygoose')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openModal('earlygoose');}">
+      <img class="card-cover" src="images/earlygoose-cover.jpg" alt="EarlyGoose app mascot, an illustrated goose.">
+      <div class="card-body">
+        <div class="card-head">
+          <h3>EarlyGoose</h3>
+          <span class="card-dates">2023</span>
+        </div>
+        <p class="card-teaser">A gamified morning-routine app with a goose companion that reacts to your habits, built at Hack the North.</p>
+        <div class="card-tags"><span class="tag">React</span><span class="tag">PoseNet</span></div>
+        <span class="card-cta">View project →</span>
+      </div>
+    </div>
+
+    <div class="project-card" role="button" tabindex="0" onclick="openModal('utra')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openModal('utra');}">
+      <img class="card-cover" src="images/utra-robot.jpg" alt="Autonomous robot with a claw mechanism, breadboard, and Arduino wired on a wooden chassis.">
+      <div class="card-body">
+        <div class="card-head">
+          <h3>UTRA Hacks Robot</h3>
+          <span class="card-dates">2025</span>
+        </div>
+        <p class="card-teaser">An autonomous robot that navigates color-coded mazes, detects color patterns, and plants flags.</p>
+        <div class="card-tags"><span class="tag">Arduino</span><span class="tag">C++</span></div>
+        <span class="card-cta">View project →</span>
+      </div>
+    </div>
+
+    <div class="project-card" role="button" tabindex="0" onclick="openModal('racket')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openModal('racket');}">
+      <img class="card-cover" src="images/racket-code.png" alt="VS Code screenshot of the Racket expression evaluator.">
+      <div class="card-body">
+        <div class="card-head">
+          <h3>Racket Expression Evaluator</h3>
+          <span class="card-dates">Gr.12 → Y1</span>
+        </div>
+        <p class="card-teaser">A Python interpreter that parses and evaluates Racket-style prefix expressions using BEDMAS.</p>
+        <div class="card-tags"><span class="tag">Python</span><span class="tag">Parsing</span></div>
+        <span class="card-cta">View project →</span>
+      </div>
+    </div>
+
+    <div class="project-card" role="button" tabindex="0" onclick="openModal('thumbpiano')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openModal('thumbpiano');}">
+      <img class="card-cover" src="images/thumb-piano.jpg" alt="Handmade wooden thumb piano with eight tuned steel tines.">
+      <div class="card-body">
+        <div class="card-head">
+          <h3>Thumb Piano</h3>
+        </div>
+        <p class="card-teaser">A kalimba built by hand and modeled in Onshape, with eight tuned steel tines.</p>
+        <div class="card-tags"><span class="tag">Onshape</span><span class="tag">Woodworking</span></div>
+        <span class="card-cta">View project →</span>
+      </div>
+    </div>
+
+    <div class="project-card" role="button" tabindex="0" onclick="openModal('penbox')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openModal('penbox');}">
+      <img class="card-cover" src="images/pen-box-1.jpg" alt="Precision-machined aluminum pen box holding a pen.">
+      <div class="card-body">
+        <div class="card-head">
+          <h3>Pen Box</h3>
+        </div>
+        <p class="card-teaser">A pen box precision-machined from solid aluminum, with an engraved hinged lid.</p>
+        <div class="card-tags"><span class="tag">Machining</span><span class="tag">CAD/CAM</span></div>
+        <span class="card-cta">View project →</span>
+      </div>
+    </div>
+
+    <div class="project-card" role="button" tabindex="0" onclick="openModal('sumobot')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openModal('sumobot');}">
+      <div class="card-cover-placeholder grad-2">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+      </div>
+      <div class="card-body">
+        <div class="card-head">
+          <h3>SumoBot</h3>
+        </div>
+        <p class="card-teaser">Embedded control software for McMaster's SumoBot competition robot.</p>
+        <div class="card-tags"><span class="tag">C++</span></div>
+        <span class="card-cta">View project →</span>
+      </div>
+    </div>
+
+    <div class="project-card" role="button" tabindex="0" onclick="openModal('snake')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openModal('snake');}">
+      <div class="card-cover-placeholder grad-3">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+      </div>
+      <div class="card-body">
+        <div class="card-head">
+          <h3>Snake Game</h3>
+        </div>
+        <p class="card-teaser">A fully functional Snake game in C++ built around clean object-oriented design.</p>
+        <div class="card-tags"><span class="tag">C++</span><span class="tag">OOP</span></div>
+        <span class="card-cta">View project →</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Rishi Chakrabarty — built with GitHub Pages.</p>
+  </div>
+</footer>
+
+<!-- ===================== Modals ===================== -->
+
+<div class="modal-overlay" id="modal-ditto" onclick="if(event.target===this)closeModal('ditto')">
+  <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="ditto-title">
+    <button class="modal-close" onclick="closeModal('ditto')" aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <div class="modal-cover single">
+      <img src="images/ditto-cover.jpg" alt="Ditto's purple avatar interface with a chat box and feature buttons.">
+    </div>
+    <div class="modal-body">
+      <div class="title-block">
+        <h2 id="ditto-title">Ditto</h2>
+        <span class="project-dates">CXC 2026 — AI Hackathon</span>
+      </div>
+      <div class="tag-row">
+        <span class="tag">Next.js</span>
+        <span class="tag">TypeScript</span>
+        <span class="tag">Three.js</span>
+        <span class="tag">ElevenLabs</span>
+        <span class="tag">Solana</span>
+      </div>
+      <div class="project-body">
+        <p>
+          Ditto is a digital twin that's meant to think, remember, and speak like its user rather than
+          like a generic chatbot. People build their twin through a personality quiz, ongoing diary
+          entries that become long-term memory, and a short voice recording used to clone their voice —
+          then can hold conversations with it the way they would with themselves.
+        </p>
+        <p>
+          Our team of four built it with Next.js and TypeScript, with a Three.js avatar that lip-syncs
+          to ElevenLabs-generated speech. Diary entries are embedded into a vector database for
+          retrieval-augmented responses, and a hash-only verification layer on Solana confirms each
+          twin's identity without storing personal data on-chain.
+        </p>
+        <p>The project won <strong>Best Use of ElevenLabs</strong> at CXC 2026.</p>
+      </div>
+      <div class="modal-links">
+        <a href="https://github.com/Pumkinmarble/cxc2026" target="_blank" rel="noopener">GitHub ↗</a>
+        <a href="https://devpost.com/software/ditto-fw1zob" target="_blank" rel="noopener">Devpost ↗</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-frc" onclick="if(event.target===this)closeModal('frc')">
+  <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="frc-title">
+    <button class="modal-close" onclick="closeModal('frc')" aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <div class="modal-cover">
+      <img src="images/shooter-cad-1.png" alt="Full SOLIDWORKS assembly of the FRC shooter on the robot chassis.">
+      <img src="images/frc-field.jpg" alt="Robot 1325 on the competition field during a match.">
+    </div>
+    <div class="modal-body">
+      <div class="title-block">
+        <h2 id="frc-title">FRC Shooter — Team 1325</h2>
+        <span class="project-dates">2022 – 2024</span>
+      </div>
+      <div class="tag-row">
+        <span class="tag">SOLIDWORKS</span>
+        <span class="tag">Mechanical design</span>
+        <span class="tag">FRC regulations</span>
+      </div>
+      <div class="project-body">
+        <p>
+          For the 2024 FIRST Robotics Competition, I designed and built the shooter for our robot —
+          the component responsible for our performance at the World Championship, where we ranked
+          5th in our division. The design requirements were accuracy, consistency, speed, and
+          reliability, with a mechanism that could adjust to different ranges and angles.
+        </p>
+        <p>
+          I sketched and modeled the shooter in SOLIDWORKS, then selected lightweight, durable
+          materials to keep it effective while staying within the competition's weight limits. Each
+          prototype was tested against shooting distance, accuracy, and reload time, with that
+          feedback feeding directly back into the next revision.
+        </p>
+      </div>
+      <div class="modal-cover" style="margin-top:16px; border-radius: var(--radius-sm); overflow:hidden;">
+        <img src="images/shooter-cad-2.png" alt="Close-up SOLIDWORKS render of the shooter's roller and gearing mechanism.">
+        <img src="images/frc-team.jpg" alt="Team 1325 posing with their winner banner from the FIRST Ontario District Centennial College Event, 2024.">
+      </div>
+      <p class="modal-caption">Shooter CAD detail, and Team 1325 after winning the FIRST Ontario District Centennial College Event, 2024.</p>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-earlygoose" onclick="if(event.target===this)closeModal('earlygoose')">
+  <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="earlygoose-title">
+    <button class="modal-close" onclick="closeModal('earlygoose')" aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <div class="modal-cover single">
+      <img src="images/earlygoose-cover.jpg" alt="EarlyGoose illustrated goose mascot on a purple background.">
+    </div>
+    <div class="modal-body">
+      <div class="title-block">
+        <h2 id="earlygoose-title">EarlyGoose</h2>
+        <span class="project-dates">Hack the North 2023</span>
+      </div>
+      <div class="tag-row">
+        <span class="tag">React</span>
+        <span class="tag">Tailwind CSS</span>
+        <span class="tag">PoseNet</span>
+      </div>
+      <div class="project-body">
+        <p>
+          EarlyGoose is a habit-building website built around an animated goose avatar that reacts to
+          whether the user is actually keeping up with their morning routine. The idea grew out of
+          wanting an alarm clock that gets people out of bed, and turned into a lighthearted, gamified
+          take on habit tracking rather than a typical productivity app.
+        </p>
+        <p>
+          Our team of four built it in React and Tailwind CSS over 36 hours, using PoseNet and
+          TensorFlow to detect whether the user was still lying in bed. Most of the stack was new to
+          us going in, learned on the fly over the course of the hackathon.
+        </p>
+      </div>
+      <div class="modal-links">
+        <a href="https://github.com/RickeyZh/hackthenorth2023" target="_blank" rel="noopener">GitHub ↗</a>
+        <a href="https://devpost.com/software/early-goose" target="_blank" rel="noopener">Devpost ↗</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-utra" onclick="if(event.target===this)closeModal('utra')">
+  <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="utra-title">
+    <button class="modal-close" onclick="closeModal('utra')" aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <div class="modal-cover single">
+      <img src="images/utra-robot.jpg" alt="Autonomous robot with a claw mechanism, breadboard, and Arduino wired on a wooden chassis.">
+    </div>
+    <div class="modal-body">
+      <div class="title-block">
+        <h2 id="utra-title">UTRA Hacks Robot</h2>
+        <span class="project-dates">UTRA Hacks 2025</span>
+      </div>
+      <div class="tag-row">
+        <span class="tag">Arduino</span>
+        <span class="tag">C++</span>
+        <span class="tag">Embedded firmware</span>
+      </div>
+      <div class="project-body">
+        <p>
+          Built for UTRA Hacks 2025, this robot tackled three autonomous challenges: color detection
+          and flag placement, maze navigation, and color pattern recognition. It ran on an Arduino Uno
+          R4 with JGA25-370 gearmotors, an L298 motor driver, and a TCS34725 RGB color sensor, and
+          completed all three challenge courses.
+        </p>
+        <p>
+          I designed and developed the firmware control logic for the robot under strict real-time
+          constraints, implementing embedded C++ drivers to interface the sensors, actuators, and
+          microcontroller at the hardware level. Most of the debugging time went into timing issues,
+          sensor noise, and non-deterministic behavior through iterative testing.
+        </p>
+      </div>
+      <div class="modal-links">
+        <a href="https://github.com/GkartheekC/UTRA-Hacks-Robot" target="_blank" rel="noopener">GitHub ↗</a>
+        <a href="https://devpost.com/software/challenge-one" target="_blank" rel="noopener">Devpost ↗</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-racket" onclick="if(event.target===this)closeModal('racket')">
+  <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="racket-title">
+    <button class="modal-close" onclick="closeModal('racket')" aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <div class="modal-cover single">
+      <img src="images/racket-code.png" alt="VS Code screenshot showing the racket_calculator function and a terminal session evaluating Racket expressions.">
+    </div>
+    <div class="modal-body">
+      <div class="title-block">
+        <h2 id="racket-title">Racket Expression Evaluator</h2>
+        <span class="project-dates">Grade 12 → First year</span>
+      </div>
+      <div class="tag-row">
+        <span class="tag">Python</span>
+        <span class="tag">Parsing</span>
+        <span class="tag">Algorithms</span>
+      </div>
+      <div class="project-body">
+        <p>
+          A Python interpreter that reads and evaluates Racket-style expressions written in prefix
+          notation. It started as my Grade 12 Computer Science project: a solver that applied BEDMAS
+          order of operations to prefix expressions, with error-checking to catch invalid input and
+          keep computations accurate. I later revisited it to implement the order of operations
+          through recursive parsing and structured expression evaluation, and added more robust
+          exception handling for malformed input and edge cases.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-thumbpiano" onclick="if(event.target===this)closeModal('thumbpiano')">
+  <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="thumbpiano-title">
+    <button class="modal-close" onclick="closeModal('thumbpiano')" aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <div class="modal-cover single">
+      <img src="images/thumb-piano.jpg" alt="Handmade wooden thumb piano with eight tuned steel tines and a dark wood inlay.">
+    </div>
+    <div class="modal-body">
+      <div class="title-block">
+        <h2 id="thumbpiano-title">Thumb Piano</h2>
+      </div>
+      <div class="tag-row">
+        <span class="tag">Onshape</span>
+        <span class="tag">Woodworking</span>
+        <span class="tag">CAD</span>
+      </div>
+      <div class="project-body">
+        <p>
+          A kalimba (thumb piano) modeled in Onshape and built by hand. The plywood body has a dark
+          wood inlay running down the front, with eight tuned steel tines held in place by a bridge
+          and pressure bar over a support rod — the mechanism that lets each tine be plucked and
+          re-tuned by adjusting how far it extends.
+        </p>
+      </div>
+      <div class="modal-links">
+        <a href="https://cad.onshape.com/documents/c86ed0e3c5eb8801c652483e/w/1bd62ac3de7291c5beade4d7/e/148ca5f8b8be49d28a4d35ff" target="_blank" rel="noopener">Onshape model ↗</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-penbox" onclick="if(event.target===this)closeModal('penbox')">
+  <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="penbox-title">
+    <button class="modal-close" onclick="closeModal('penbox')" aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <div class="modal-cover">
+      <img src="images/pen-box-1.jpg" alt="Open aluminum pen box with a machined pen resting in a milled cavity.">
+      <img src="images/pen-box-2.jpg" alt="Closed pen box with an engraved maple leaf and lettering on the lid.">
+    </div>
+    <div class="modal-body">
+      <div class="title-block">
+        <h2 id="penbox-title">Pen Box</h2>
+      </div>
+      <div class="tag-row">
+        <span class="tag">Machining</span>
+        <span class="tag">CAD/CAM</span>
+        <span class="tag">Metalworking</span>
+      </div>
+      <div class="project-body">
+        <p>
+          A pen box precision-machined from a solid block of aluminum, with a hinged lid and an
+          interior cavity milled to the exact shape of the pen it holds. The lid is engraved with a
+          maple leaf and lettering, finished by hand after machining.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-sumobot" onclick="if(event.target===this)closeModal('sumobot')">
+  <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="sumobot-title">
+    <button class="modal-close" onclick="closeModal('sumobot')" aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <div class="modal-body" style="padding-top:34px;">
+      <div class="title-block">
+        <h2 id="sumobot-title">SumoBot</h2>
+      </div>
+      <div class="tag-row">
+        <span class="tag">C++</span>
+        <span class="tag">Embedded systems</span>
+      </div>
+      <div class="project-body">
+        <ul style="margin:0; padding-left:1.2em; color:var(--text);">
+          <li style="margin-bottom:8px;">Developed embedded control software for McMaster's SumoBot competition robot using C++ on microcontrollers.</li>
+          <li style="margin-bottom:8px;">Implemented movement strategies, sensor-based decision making, and real-time control loops for autonomous behavior.</li>
+          <li>Tested and refined software behavior through repeated hardware trials and competition-focused iteration.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-snake" onclick="if(event.target===this)closeModal('snake')">
+  <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="snake-title">
+    <button class="modal-close" onclick="closeModal('snake')" aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <div class="modal-body" style="padding-top:34px;">
+      <div class="title-block">
+        <h2 id="snake-title">Snake Game</h2>
+      </div>
+      <div class="tag-row">
+        <span class="tag">C++</span>
+        <span class="tag">Object-oriented programming</span>
+      </div>
+      <div class="project-body">
+        <ul style="margin:0; padding-left:1.2em; color:var(--text);">
+          <li style="margin-bottom:8px;">Built a fully functional Snake game in C++ using object-oriented programming principles.</li>
+          <li style="margin-bottom:8px;">Applied OOP design to modularize game logic, manage dynamic memory safely, and separate concerns.</li>
+          <li>Refactored the codebase to improve readability, performance, and overall game state management.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function openModal(id) {
+    var overlay = document.getElementById('modal-' + id);
+    if (!overlay) return;
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal(id) {
+    var overlay = document.getElementById('modal-' + id);
+    if (!overlay) return;
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      document.querySelectorAll('.modal-overlay.open').forEach(function (o) {
+        o.classList.remove('open');
+      });
+      document.body.style.overflow = '';
+    }
+  });
+</script>
+
+</body>
+</html>
